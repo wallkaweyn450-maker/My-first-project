@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Fun Facts</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #d9f3ff, #f8e4ff);
+      color: #24213a;
+    }
+
+    main {
+      width: min(90%, 520px);
+      padding: 2.5rem;
+      text-align: center;
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 16px 48px #34234a20;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    #fact {
+      min-height: 5rem;
+      margin: 1.5rem 0;
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+
+    button {
+      padding: 0.85rem 1.2rem;
+      border: 0;
+      border-radius: 12px;
+      background: #6845d8;
+      color: white;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #5031b5;
+    }
+
+    button:focus-visible {
+      outline: 3px solid #24213a;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🎉 Random Fun Facts</h1>
+    <p id="fact" aria-live="polite">Ready for a fun fact?</p>
+    <button id="new-fact" type="button">Show another fact</button>
+  </main>
+
+  <script>
+    const facts = [
+      "Octopuses have three hearts.",
+      "A group of flamingos is called a flamboyance.",
+      "Bananas are berries, but strawberries aren't.",
+      "The Eiffel Tower can grow taller in hot weather.",
+      "Wombat poop is cube-shaped.",
+      "A day on Venus is longer than its year.",
+      "Sea otters sometimes hold hands while they sleep.",
+      "Honey can remain edible for thousands of years.",
+      "Scotland's national animal is the unicorn.",
+      "The fingerprints of a koala are remarkably similar to human fingerprints."
+    ];
+
+    const factElement = document.querySelector("#fact");
+    const button = document.querySelector("#new-fact");
+    let previousIndex = -1;
+
+    button.addEventListener("click", () => {
+      let index;
+
+      do {
+        index = Math.floor(Math.random() * facts.length);
+      } while (facts.length > 1 && index === previousIndex);
+
+      previousIndex = index;
+      factElement.textContent = facts[index];
+    });
+  </script>
+</body>
+</html>
