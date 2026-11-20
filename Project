@@ -1,0 +1,153 @@
+<!DOCTYPE html >
+<htnml>
+    <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <link rel="stylesheet" href="styles.css3.css">
+   xde  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body background="bulb.jpg.png.png">
+ <nav>
+    <a htef="#">Home page</a>
+    <a htef="#">About us</a>
+    <a htef="#">Contact us</a>
+    <button id="sign-in"class="signin">Sign in</button>
+
+ </nav>
+
+<div class="social-icons">
+    <a href="https://www.facebook.com/" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a href="https://www.youtube.com/" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <a href="https://wa.me/" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+     <form class="menu-section"
+     <section class="sigin-form">
+      <p><label><span>Username:<i class="far fa-user"></i> <input type="UsernameInput"name="Username" placeholder="Enter Your Username"></span></label></p>
+      <p><label><span>Email: <i class="far fa-mail"></i> <input type="EmailInput"name="Email" placeholder="Enter Your Email"></span></label></p>
+      <p><label><span>password: <i class="far fa-user-secret"></i> <input type="PasswordInput"name="password" placeholder="Enter Your Password"></span></label></p>
+      <p><label><span>tel no:<i class="far fa-phone-rings"></i>  <input type="telephoneInput"name="telephone" placeholder="Enter Your number"></span></label></p>
+      <button type="submit">sign in</button>
+     </section>
+    </form>
+     <img src="coding.jpg"> 
+     <br />
+     <p1>it really meant by saying <mark>a journey of 100 miles start with one step</mark>.
+      I have started my journey of web development on year <mark>2026 August</mark>
+      an very glad to choice one the best skills in the digital world 
+      where the technology is<mark> developing </mark>every single day. I could encourage those
+      who are wishing t start or take web development as the career your decision 
+     matters alot compare to wat people are saying about you so believe in your self
+     and never  waste any single minute of your life listning of when some people are trying to<s> mock
+     you</s> </p1>
+     <section class="answer-option">
+      <legend>great question for you </legend>
+      <p>what comes to your mine when you came across to my website
+       <option type="check-box" value="helpful website">helpful website</option>
+       <option type="check-box" value="unhelpful website">unhelpful website</option>
+       <option type="check-box" value="trusted website">trusted website</option>
+       <option type="check-box" value="untrusted website">untrusted website</option>
+     </select>
+     <table>
+      <thead>
+       <th>classification</th>
+       <th>description</th>
+       <th>price</th>
+      </thead>
+      
+      <tr>
+       <td>1.business websites</td>
+       <td>a busiess website is for business people</td>
+       <td>$500-1000</td>
+      </tr>
+       
+      <tr>
+       <td>2.booking websites</td>
+       <td>a booking website is for people who wants emergrncy journey for pleasure</td>
+       <td>$700-1200</td>
+      </tr>
+       
+      <tr>
+       <td>3.company websites</td>
+       <td>a company website is for company people</td>
+       <td>$1000-1500</td>
+      </tr>
+    </table>
+     
+     <button class="menu-btn" onclick="openSidebar()">☰</button>
+
+<aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="closeSidebar()">×</button>
+
+    <h2>My Menu</h2>
+
+    <a href="#"><i class="far fa_tv"></i>Dashboard</a>
+    <a href="#"><i class="far fa_user"></i>Account</a>
+    <a href="#"><i class="far fa_users"></i>Service</a>
+    <a href="#"><i class="far fa_comment"></i>Comment</a>
+    <a href="#"><i class="far fa_gear"></i>Settings</a>
+    <a href="#"><i class="far fa_user-removed"></i>Logout</a>
+</aside>
+
+<main>
+    <h1>Welcome to my website</h1>
+</main>
+    
+<main class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content.</p>
+</main>
+     
+     
+     <footer>
+      <div class="social-icon">
+           <a href="https://www.facebook.com/" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a href="https://www.youtube.com/" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <a href="https://wa.me/" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+      <script>
+      function openSidebar() {
+    document.getElementById("sidebar").style.left = "0";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.left = "-250px";
+}
+       
+      </script>
+      <small>copyright @copy siyadovic 2020-2026</small>
+     </footer>
+    </body>
+</html>
